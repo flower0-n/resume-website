@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Harshit Bansal | Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-  <nav class="navbar">
-  <span class="logo">HB</span>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+<body>
 
-<header id="hero">
-  <img src="photo.jpeg" alt="My photo" width="150">
-  <h1>HARSHIT BANSAL</h1>
-</header>
+  <nav id="navbar">
+    <a class="brand" href="#top">Harshit Bansal</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<main class="container">
-  <section id="about" class="card">
-    <h2>HEY I'm HARSHIT BANSAL</h2>
-    <p>I'm just learning all i can that's all</p>
-  </section>
-
-  <section id="education" class="card">
-    <h2>EDUCATION</h2>
-    <div class="row">
-      <div class="box">
-        <h3>12th grade</h3>
-        <p>school: kota public school</p>
-        <p>percentage: 76.4%</p>
-        <p>passing year: 2025</p>
-      </div>
-      <div class="box">
-        <h3>10th grade</h3>
-        <p>school: MTCS</p>
-        <p>percentage: 73.4%</p>
-        <p>passing year: 2023</p>
+  <header id="top">
+    <div class="hero-inner">
+      <img class="avatar" src="photo.jpeg" alt="My photo">
+      <div>
+        <h1>HARSHIT BANSAL</h1>
+        <p class="tagline">Learning HTML, CSS and Python</p>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section id="projects" class="card">
-    <h2>PROJECTS</h2>
-    <div class="row">
-      <div class="box">
-        <h3>RESUME WEBSITE</h3>
-        <p>demo resume website built with HTML and CSS</p>
-      </div>
-      <div class="box">
-        <h3>MAD LIBS GAME</h3>
-        <p>Word game in python that takes user input and builds a story.</p>
+  <main>
+    <section id="about">
+      <h2>About me</h2>
+      <p>HEY I'm HARSHIT BANSAL. I'm just learning all i can that's all</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li>
+          <h3>12th grade</h3>
+          <p>school: kota public school</p>
+          <p>percentage: 76.4%</p>
+          <p>passing year: 2025</p>
+        </li>
+        <li>
+          <h3>10th grade</h3>
+          <p>school: MTCS</p>
+          <p>percentage: 73.4%</p>
+          <p>passing year: 2023</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <article class="project">
+          <h3>Resume Website</h3>
+          <p>A resume website built with HTML and CSS and hosted on GitHub Pages.</p>
+        </article>
+        <article class="project">
+          <h3>Mad Libs Game</h3>
+          <p>A word game in Python that takes user input and builds a story.</p>
 <pre><code>article = input("enter article(a,an,the): ")
 verb = input("enter the verb(action): ")
 article2 = input("enter the article(a,an,the): ")
@@ -67,21 +74,28 @@ print(f"today i went to {article} art exhibition at a museum")
 print(f"where I {verb} a painting of van gogh")
 print(f"{article2} painting was {adjective} well made")
 print(f"it {verb2} a fun experience")</code></pre>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="skills" class="card">
-    <h2>SKILLS</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>PYTHON (very basic)</li>
-    </ul>
-  </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Python (very basic)</li>
+      </ul>
+    </section>
 
-  <section id="contact" class="card">
-    <h2>CONTACT</h2>
-    <p>MAIL: harshit.bansal126@iimb.ac.in</p>
-  </section>
-</main>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Mail: <a href="mailto:harshit.bansal126@iimb.ac.in">harshit.bansal126@iimb.ac.in</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Harshit Bansal</p>
+  </footer>
+
+</body>
+</html>
